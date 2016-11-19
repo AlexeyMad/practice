@@ -1,3 +1,0 @@
-# practice
-НРТК ПП 
-test
