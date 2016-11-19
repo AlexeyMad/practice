@@ -1,7 +1,7 @@
-// task1.cpp : Defines the entry point for the console application.
-//
+
 
 #include "stdafx.h"
+
 /*
 Написать программу, которая запрашивает у пользователя пол,
 рост и вес, а затем анализирует соотношение роста и веса,
@@ -12,6 +12,23 @@
 
 int main()
 {
+
+	char sex;
+
+
+	printf("Enter your sex(m/f): ");
+	scanf_s("%c", &sex);
+
+	while (sex != 'm' && sex != 'f')
+	{
+		rewind(stdin);
+		printf("Do you think its funny? Only M or F allowed! \n");
+		printf("Enter your sex(m/f):");
+		scanf_s("%c", &sex);
+	}
+ 
+	getchar();
+	getchar();
 	return 0;
 }
 
