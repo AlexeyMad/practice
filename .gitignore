@@ -66,6 +66,7 @@ ipch/
 *.vcxproj.filters
 *.txt
 *.h
+*.exe
 stdafx.cpp
 # Guidance Automation Toolkit
 *.gpState
