@@ -12,9 +12,9 @@
 
 int main()
 {
-	float we, he, ratio;
-	char sex;
 
+	char sex;
+	float we, he, ratio;
 
 	printf("Enter your sex(m/f): ");
 	scanf_s("%c", &sex);
@@ -29,6 +29,7 @@ int main()
 
 
 	printf("Weight(kg): ");
+	scanf_s("%f", &we);
 
 	while ((we <= 0) || (we >= 300))
 	{
@@ -46,9 +47,45 @@ int main()
 		printf("Your heigth is invalid, enter your heigth(m) again: ");
 		scanf_s("%f", &he);
 	}
+
 	ratio = we / (he * he);
 
-	printf("\n", ratio);
+
+	if (sex == 'm')
+	{
+		if (ratio < 19)
+		{
+			printf("You need to gain weight");
+		}
+		else if (ratio < 25)
+		{
+			printf("Your weight is norm");
+		}
+		else
+		{
+			printf("You need to lose some weight");
+		}
+
+
+	}
+	else
+	{
+		if (ratio < 19)
+		{
+			printf("You need to gain weight");
+		}
+		else if (ratio < 24)
+		{
+			printf("Your weight is norm");
+		}
+		else
+		{
+			printf("You need to lose some weight");
+		}
+
+
+	}
+
 
 	getchar();
 	getchar();
