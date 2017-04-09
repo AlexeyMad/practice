@@ -68,6 +68,10 @@ ipch/
 *.h
 *.exe
 stdafx.cpp
+*.db
+*.opendb
+*.vc.db
+*.vc.opendb
 # Guidance Automation Toolkit
 *.gpState
 
