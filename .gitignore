@@ -64,7 +64,7 @@ ipch/
 *.opensdf
 *.vcxproj
 *.vcxproj.filters
-*.txt
+
 
 *.exe
 stdafx.cpp

@@ -6,12 +6,6 @@
 
 class Circle {
 
-
-	/*
-	Radius - радиус 
-	Ference - длина окружности 
-	Area - площадь круга */
-
 public:
 
 	void setRadius(double set_Rad) {
@@ -20,21 +14,17 @@ public:
 		Ference = 2 * pi * Radius;
 		Area = pi *  pow(Radius, 2);
 	}
-
 	void setFerence(double set_Fer) {
-
 		Ference = set_Fer;
 		Radius = Ference / (2 * pi);
 		Area = pi * pow(Radius, 2);
 	}
-
 	void setArea(double set_Ar) {
 
 		Area = set_Ar;
 		Radius = sqrt(Area / pi);
 		Ference = 2 * pi * Radius;
 	}
-
 	double get_Radius() {
 		return Radius;
 	}
